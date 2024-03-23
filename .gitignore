@@ -1,5 +1,12 @@
 config/user/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 config/user/.icons/Windows/icon-theme.cache
 doc/Downloads/
-dev/
+doc/Videos/
+doc/Pictures/
+doc/Music/
+doc/Documents/
 run/setup/
+run/bin/
+raw/
+dev/
+tmp/
