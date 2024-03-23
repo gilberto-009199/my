@@ -1,4 +1,4 @@
-config/user/.config/xfce4/xfconf/xfce-perchannel-xml/
+config/user/.config/xfce4/xfconf/xfce-perchannel-xml/*.*
 config/user/.icons/Windows/icon-theme.cache
 doc/Downloads/
 doc/Videos/
