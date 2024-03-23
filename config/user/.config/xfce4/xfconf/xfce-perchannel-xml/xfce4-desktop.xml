@@ -8,7 +8,7 @@
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/administrador/my/config/user/.backgrounds/70281f0dd8e176e4af3ca54b96818b9b97b886ab.jpg"/>
+        <property name="image-path" type="string" value="/home/administrador/.backgrounds/xpbg.jpg"/>
         <property name="image-show" type="empty"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="empty"/>
@@ -48,7 +48,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="1"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/images/desktop-base/default"/>
+          <property name="last-image" type="string" value="/home/administrador/.backgrounds/xpbg.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="1"/>
@@ -96,5 +96,15 @@
   <property name="last" type="empty">
     <property name="window-width" type="int" value="652"/>
     <property name="window-height" type="int" value="590"/>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="28"/>
+    <property name="tooltip-size" type="double" value="28"/>
+    <property name="use-custom-font-size" type="bool" value="true"/>
+    <property name="font-size" type="double" value="7"/>
+    <property name="style" type="int" value="2"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show-delete" type="bool" value="true"/>
   </property>
 </channel>

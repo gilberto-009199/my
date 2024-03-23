@@ -2,11 +2,11 @@
 4.10.3+=true
 
 [/home/administrador/Desktop/Project Zomboid.desktop]
-row=13
+row=5
 col=0
 
 [/home/administrador/Desktop/Google Chrome.desktop]
-row=1
+row=2
 col=0
 
 [/home/administrador/Desktop/steam.desktop]
@@ -14,11 +14,15 @@ row=6
 col=0
 
 [/home/administrador/Desktop/Colony Survival.desktop]
-row=11
+row=0
+col=0
+
+[/home/administrador/Desktop/Spore Galactic Adventures.desktop]
+row=1
 col=0
 
 [/home/administrador/Desktop/Necesse.desktop]
-row=10
+row=4
 col=0
 
 [/home/administrador/Desktop/Terraria.desktop]
@@ -29,31 +33,27 @@ col=0
 row=8
 col=0
 
-[/home/administrador/Desktop/chrome-egmafekfmcnknbdlbfbhafbllplmjlhn-Default.desktop]
-row=0
-col=0
-
 [/home/administrador/Desktop/Factorio.desktop]
 row=7
 col=0
 
-[/home/administrador/Desktop/Spore Galactic Adventures.desktop]
-row=12
-col=0
-
-[22e6315c-316a-487e-b88a-1354b081075d]
-row=2
-col=0
-
-[Trash]
+[/home/administrador/Desktop/chrome-egmafekfmcnknbdlbfbhafbllplmjlhn-Default.desktop]
 row=3
 col=0
 
+[22e6315c-316a-487e-b88a-1354b081075d]
+row=3
+col=1
+
+[Trash]
+row=2
+col=1
+
 [/]
-row=4
-col=0
+row=1
+col=1
 
 [/home/administrador]
-row=5
-col=0
+row=0
+col=1
 
