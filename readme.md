@@ -1,6 +1,6 @@
 # how install
 
- primeiro atualize o repositorio:
+ Primeiro atualize o repositorio:
 
 ``
 sudo apt update
