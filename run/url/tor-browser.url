@@ -1,0 +1,14 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Tor-Browser
+Comment=Defend yourself against tracking and surveillance. Circumvent censorship.
+Icon=https://support.torproject.org/static/images/favicon.png
+IconFile=https://support.torproject.org/static/images/favicon.png
+URL=https://dist.torproject.org/torbrowser/13.0.13/tor-browser-linux-x86_64-13.0.13.tar.xz
+#Type=Application
+#Exec=/usr/bin/google-chrome-stable %U
+#Path=
+#StartupNotify=true
+
+

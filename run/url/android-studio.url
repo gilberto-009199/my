@@ -1,0 +1,14 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Android Studio
+Comment=Get the official Integrated Development Environment (IDE) for Android app development.
+Icon=https://www.gstatic.com/devrel-devsite/prod/v3c0543fd6f8d5c1b2f007d4210dd17d0997f2b977af4457cdf21a3898c7e4caf/android/images/favicon.png
+IconFile=https://www.gstatic.com/devrel-devsite/prod/v3c0543fd6f8d5c1b2f007d4210dd17d0997f2b977af4457cdf21a3898c7e4caf/android/images/favicon.png
+URL=https://r1---sn-bg0eznls.gvt1.com/edgedl/android/studio/ide-zips/2023.2.1.24/android-studio-2023.2.1.24-linux.tar.gz
+#Type=Application
+#Exec=/usr/bin/google-chrome-stable %U
+#Path=
+#StartupNotify=true
+
+

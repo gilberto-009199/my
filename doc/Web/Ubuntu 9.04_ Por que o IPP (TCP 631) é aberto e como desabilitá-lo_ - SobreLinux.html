@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it -->
+<html><head itemscope="" itemtype="http://schema.org/WebSite"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="csrf-param" content="_csrf-frontend">
+    <meta name="csrf-token" content="Jr2fnKOIkFxuWwBtuopPIkALH4c4vFFWGeqelQCZBLlA1bLo0c-gETsoYyfO0i5jCDhKxXLpHSRApc3gYcxo_Q==">
+    <title>Ubuntu 9.04: Por que o IPP (TCP 631) é aberto e como desabilitá-lo? - SobreLinux</title>
+    <link href="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/bootstrap.css" rel="stylesheet">
+<link href="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/font-awesome.min.css" rel="stylesheet">
+<link href="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/prettify.css" rel="stylesheet">
+<link href="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/site.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/f.txt"></script><script async="" src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/f(1).txt"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-2852526888215964",
+              enable_page_level_ads: true
+         });
+    </script>
+
+    <script>
+        window.__gcse = {
+            callback: function() {
+                $('#___gcse_0 .gsc-clear-button').remove();
+                $('#___gcse_0 .gsc-search-button').remove();
+                $('#___gcse_0 .gsib_b').remove();
+                $('#___gcse_0 .gsc-input input').attr('placeholder', 'Pesquisa...');
+            }
+        };
+        (function() {
+            var cx = '009700414910699552116:i_s7juwspxy';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit?r"+
+        escape(document.referrer)+((typeof(screen)=="undefined")?"":
+        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";h"+escape(document.title.substring(0,150))+
+        ";"+Math.random();</script>
+
+</head>
+
+
+<body onload="prettyPrint()">
+
+<div class="wrap">
+    <nav id="w0" class="navbar navbar-default"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button></div><div id="w0-collapse" class="collapse navbar-collapse"><a class="navbar-brand" href="https://sobrelinux.info/"><div class="name"><img src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/logo.png">Sobre<span class="cl-orange">Linux</span></div></a><ul id="w1" class="navbar-nav navbar-right nav"><li><a href="https://sobrelinux.info/">Pagina inicial</a></li>
+<li><a href="https://sobrelinux.info/qna">Perguntas</a></li>
+<li><a href="https://sobrelinux.info/tags">Tags</a></li></ul><div class="search">
+                <gcse:searchbox-only resultsurl="/s.html" filter="0" sort_by=""></gcse:searchbox-only>
+          </div></div></div></nav>
+    <div class="container">
+                        
+<div class="m-t-10" itemscope="" itemtype="http://schema.org/Question">
+    <div class="question-header">
+        <h1 itemprop="name">Ubuntu 9.04: Por que o IPP (TCP 631) é aberto e como desabilitá-lo?</h1>
+
+        
+    </div>
+
+    <div class="col-sm-9" style="padding-bottom:10px">
+    <div class="row">
+        <a data-toggle="collapse" data-target="#navig" href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#">Navegue suas respostas</a> 
+
+        <div id="navig" class="collapse">
+
+                                                <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#25793">#1 resposta do  (8 votos)</a> <br>                            <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#728169">#2 resposta do  (3 votos)</a> <br>                            <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#385333">#3 resposta do  (2 votos)</a> <br>                            <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#1338672">#4 resposta do  (0 votos)</a> <br>                            <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#1338656">#5 resposta do  (-3 votos)</a> <br>             
+         
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3 pull-right">
+        <div class="row hidden-xs right-col sidebar">
+            <!-- Сайдбар -->
+
+
+
+
+
+
+
+            
+            <div class="awrap" style="top: 16px; opacity: 1; position: initial; margin-top: 0px;">
+                <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px;margin-top: -5px;" data-ad-client="ca-pub-2852526888215964" data-ad-slot="4091195897">
+                </ins>
+            </div>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                document.addEventListener('DOMContentLoaded', function(){
+                    var awrap = $('.awrap');
+                    setTimeout(function(){
+                        awrap.fadeIn();
+                        awrap.animate({opacity: 1}, 200);
+                    }, 2000);
+                    $(window).on('scroll', function () {
+                        if ($(window).scrollTop() >= 209 && $(window).scrollTop() <= 2000) {
+                            awrap.css({position : 'fixed'});
+                            awrap.css({"margin-top" : '0px'})
+                        } else {
+                            awrap.css({position : 'initial'});
+                            if ($(window).scrollTop() >= 2000) {
+                                awrap.css({"margin-top" : '1797px'});
+                            }
+                        }
+                    });
+                });
+            </script>
+            <!-- Сайдбар -->
+        </div>
+    </div>
+
+    <div class="col-sm-9 main-col">
+        <div class="row question">
+            <div class="left-row">
+                <div class="votes">
+                    <i class="fa fa-caret-up vote"></i>
+                    <div class="vote-count" itemprop="upvoteCount">9</div>
+                    <i class="fa fa-caret-down vote"></i>
+                    <i class="fa fa-star star"></i>
+                </div>
+            </div>
+            <div class="question-row">
+                <div class="question-text">
+                    <div class="description" itemprop="text">
+                        <div classe="post-text" itemprop="texto">
+
+<p> Estou configurando uma nova instalação do laptop Ubuntu 9.04 e quando faço uma varredura de portas, descubro que o TCP 631 (IPP) está aberto. O que eu faço para desativar essa porta de escuta? </p>
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                    </div>
+                                            <div class="tags">
+                                                            <a href="https://sobrelinux.info/tags/tag/ubuntu" class="tag" title="Tags &#39;ubuntu&#39;" rel="tag">ubuntu</a>
+                                                    </div>
+                                        <div class="clearfix"></div>
+                    <div class="action-time">
+                        por <a rel="#" target="_blank">Bob</a>
+                        <span class="relativetime"> 19.08.2009 / 17:46</span>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row answers" id="answers">
+            <div class="answers-header">
+                <h2 class="pull-left"><span itemprop="answerCount">5</span> respostas</h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="answer-pager">
+                            </div>
+
+            
+            
+                
+                    
+                        
+                        <div class="answer" id="25793" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+                            <div class="left-row">
+                                <div class="votes">
+                                    <i class="fa fa-caret-up vote"></i>
+                                    <div class="vote-count" itemprop="upvoteCount">8</div>
+                                    <i class="fa fa-caret-down vote"></i>
+                                    <i class="fa fa-check accepted"></i>
+                                </div>
+                            </div>
+                            <div class="answer-row">
+                                <div class="answer-text">
+                                    <div class="description" itemprop="text">
+
+                                        <!--? if ($answer_counter == 1): ?-->
+                                            <!-- 300x250_default -->
+                                            <!-- <ins class="adsbygoogle"
+                                                 style="display:inline-block;width:300px;height:250px"
+                                                 data-ad-client="ca-pub-2852526888215964"
+                                                 data-ad-slot="9131769582"></ins> -->
+                                            <script> 
+                                            (adsbygoogle = window.adsbygoogle || []).push({});
+                                            </script>
+                                        <!--? endif; ?-->
+                                        <div class="post-text" itemprop="texto">
+<p> O CUPS, que faz parte da Base Padrão do Linux, está ativado. Para parar o serviço: </p>
+
+ <pre><code>sudo /etc/init.d/cupsys stop 
+</code></pre> 
+
+<p> Para desativá-lo da inicialização: </p>
+
+ <pre><code>update-rc.d -f cupsys remove
+update-rc.d cupsys stop 20 2 3 4 5 .
+</code></pre> 
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                                    </div>
+                                    <div class="action-time">
+                                        por <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it" rel="noopener" target="_blank"></a>
+                                        <span title="25793" class="relativetime"> 19.08.2009 / 17:57</span>
+                                    </div>
+                    
+
+                                                                        <!--<a class="share-link" href="/questions/53/why-does-html-think-chucknorris-is-a-color/1216#1216" title="поделиться">поделиться</a>-->
+                                </div>
+                            </div>
+                        </div>
+                                    
+                                    
+                                    
+                                    
+                                                
+                                                                                                                                    <div class="answer" id="728169" itemscope="" itemtype="http://schema.org/Answer">
+                            <div class="left-row">
+                                <div class="votes">
+                                    <i class="fa fa-caret-up vote"></i>
+                                    <div class="vote-count" itemprop="upvoteCount">3</div>
+                                    <i class="fa fa-caret-down vote"></i>
+                                </div>
+                            </div>
+                            <div class="answer-row">
+                                <div class="answer-text">
+                                    <div class="description" itemprop="text">
+
+                                        <div>
+                                                                                 </div>
+
+                                        <div class="post-text" itemprop="texto">
+<p> Outra maneira de parar este servidor de impressão é abrir um shell de terminal  <code>ctrl + alt + t</code>   e digitar  <code>sudo service cups stop</code>   </p>
+
+<p> Isso interromperá o servidor e fechará a porta, mas será reiniciado em uma reinicialização. Você também pode reiniciar ou iniciar o serviço dessa forma simplesmente substituindo  <code>restart</code>   ou  <code>start</code>  , em que  <code>stop</code>   está no comando. : D </p>
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                                    </div>
+                                    <div class="action-time">
+                                        por
+                                                                                                                                                                    <span title="728169" class="relativetime"> 12.03.2014 / 19:22</span>
+                                    </div>
+                                                                   </div>
+                            </div>
+                        </div>
+                                                                                                        <div class="answer" id="385333" itemscope="" itemtype="http://schema.org/Answer">
+                            <div class="left-row">
+                                <div class="votes">
+                                    <i class="fa fa-caret-up vote"></i>
+                                    <div class="vote-count" itemprop="upvoteCount">2</div>
+                                    <i class="fa fa-caret-down vote"></i>
+                                </div>
+                            </div>
+                            <div class="answer-row">
+                                <div class="answer-text">
+                                    <div class="description" itemprop="text">
+
+                                        <div>
+                                                                                 </div>
+
+                                        <div class="post-text" itemprop="texto">
+<p> Não desabilite, esta é sua impressora! </p>
+
+<p> Para ativá-lo novamente, você pode adicionar a porta TCP 631 ao seu Firewall. Basta digitar  <code>631</code>   no Firewall. </p>
+
+<p> Mais informações nos <a href="http://ubuntuforums.org/showthread.php?p=11659646#post11659646"> Fóruns do Ubuntu </a>: </p>
+
+<blockquote>
+  <p>Thank you ! I have just deleted the port 631/tcp from FIREWALL because Facebook disconnected me alone wich gave me suspicions. So this was my printer !!! So just I'll just add again ALLOW IN TCP 631 inside my FIREWALL.</p>
+</blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                                    </div>
+                                    <div class="action-time">
+                                        por
+                                                                                                                                                                    <span title="385333" class="relativetime"> 02.02.2012 / 22:29</span>
+                                    </div>
+                                                                   </div>
+                            </div>
+                        </div>
+                                                                                                        <div class="answer" id="1338672" itemscope="" itemtype="http://schema.org/Answer">
+                            <div class="left-row">
+                                <div class="votes">
+                                    <i class="fa fa-caret-up vote"></i>
+                                    <div class="vote-count" itemprop="upvoteCount">0</div>
+                                    <i class="fa fa-caret-down vote"></i>
+                                </div>
+                            </div>
+                            <div class="answer-row">
+                                <div class="answer-text">
+                                    <div class="description" itemprop="text">
+
+                                        <div>
+                                                                                 </div>
+
+                                        <div class="post-text" itemprop="texto">
+<p> O Ubuntu 9.04 não tem "portas abertas" por política. </p>
+
+<p> <a href="https://wiki.ubuntu.com/Security/Features/Historical"> link </a> </p>
+
+<p> <a href="https://wiki.ubuntu.com/Security/Features/Historical#ports"> link </a> </p>
+
+<blockquote>
+  <p>Testing for this can be done with <code>netstat -an --inet | grep LISTEN | grep -v 127.0.0.1:</code> on a fresh install.</p>
+</blockquote>
+
+<p> (Isto cobre o ipv4. Um comando diferente é necessário para o ipv6). </p>
+
+<p> Eu acredito que você vai encontrar uma nova instalação do Ubuntu está escutando no endereço 127.0.0.1, que só é acessível a partir do seu próprio computador. Se você digitalizar, por exemplo   <code>nmap localhost</code>  , isso localizará o listener IPP do host local. Mas, se você verificar o endereço IP da sua interface de rede, não encontrará nenhum ouvinte. Para encontrar o endereço IP da sua interface de rede, você pode executar  <code>ifconfig</code>  , por exemplo, meu endereço IP atual é 172.16.1.8: </p>
+
+ <pre><code>$ ifconfig
+eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 172.16.1.8  netmask 255.255.255.0  broadcast 172.16.1.255
+        inet6 fd5e:fcf3:b885:10:250:43ff:fe01:c0ab  prefixlen 64  scopeid 0x0&lt;global&gt;
+        inet6 fe80::250:43ff:fe01:c0ab  prefixlen 64  scopeid 0x20&lt;link&gt;
+        ether 00:50:43:01:c0:ab  txqueuelen 1000  (Ethernet)
+        RX packets 15144365  bytes 1999269267 (1.8 GiB)
+        RX errors 3  dropped 3  overruns 0  frame 0
+        TX packets 13871393  bytes 725196571 (691.6 MiB)
+        TX errors 0  dropped 4712 overruns 0  carrier 0  collisions 0
+        device interrupt 35  
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1  (Local Loopback)
+        RX packets 3626080  bytes 405627539 (386.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3626080  bytes 405627539 (386.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+</code></pre> 
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                                    </div>
+                                    <div class="action-time">
+                                        por
+                                                                                                                                                                    <span title="1338672" class="relativetime"> 12.07.2018 / 19:07</span>
+                                    </div>
+                                                                   </div>
+                            </div>
+                        </div>
+                                                                                                        <div class="answer" id="1338656" itemscope="" itemtype="http://schema.org/Answer">
+                            <div class="left-row">
+                                <div class="votes">
+                                    <i class="fa fa-caret-up vote"></i>
+                                    <div class="vote-count" itemprop="upvoteCount">-3</div>
+                                    <i class="fa fa-caret-down vote"></i>
+                                </div>
+                            </div>
+                            <div class="answer-row">
+                                <div class="answer-text">
+                                    <div class="description" itemprop="text">
+
+                                        <div>
+                                                                                 </div>
+
+                                        <div class="post-text" itemprop="texto">
+<p> se você quiser interromper o uso do serviço: </p>
+
+ <pre><code>"sudo systemctl stop cups.service &amp;&amp; sudo systemctl disable cups.service"
+</code></pre> 
+&nbsp;&nbsp;&nbsp;&nbsp;</div>                                    </div>
+                                    <div class="action-time">
+                                        por
+                                                                                                                                                                    <span title="1338656" class="relativetime"> 12.07.2018 / 18:38</span>
+                                    </div>
+                                                                   </div>
+                            </div>
+                        </div>
+                                                            <div class="answer-pager">
+                            </div>
+        </div>
+
+                    <div class="row bottom-notice">
+                <p>Tags
+                                            <a href="https://sobrelinux.info/tags/tag/ubuntu" class="tag" title="Tag &#39;ubuntu&#39;" rel="tag">ubuntu</a>
+                                    </p>
+            </div>
+        
+
+         <div class="row">
+                            <a href="https://sobrelinux.info/questions/294703/linux-groups-vs-groups-username">Linux: grupos versus grupos nome de usuário</a>
+                                        <a href="https://sobrelinux.info/questions/294705/windows-10-difference-between-file-history-and-backup-and-restore">Windows 10: Diferença entre histórico de arquivos e backup e restauração</a>
+                    </div>
+
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="pull-left">
+            <div class="license">
+                user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow license">cc by-sa 3.0</a>
+                with attribution required.
+            </div>
+        </div>
+
+        <div class="pull-right logo">
+            <a href="https://sobrelinux.info/questions/294704/ubuntu-9-04-why-is-ipptcp-631-open-and-how-do-i-disable-it#">
+                <!-- <img src="/img/logo-dark.svg"> -->
+                <div class="name">Sobre<span class="cl-orange">Linux</span></div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/jquery.js"></script>
+<script src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/yii.js"></script>
+<script src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/prettify.js"></script>
+<script src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/site.js"></script>
+<script src="./Ubuntu 9.04_ Por que o IPP (TCP 631) é aberto e como desabilitá-lo_ - SobreLinux_files/bootstrap.js"></script>
+
+</body></html>

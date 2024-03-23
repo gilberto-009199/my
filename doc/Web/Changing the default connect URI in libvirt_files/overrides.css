@@ -1,0 +1,9 @@
+.nav-large {
+  height: 50px;
+}
+
+.codehilite pre {
+  word-wrap: normal;
+  overflow-x: auto;
+  white-space: pre;
+}

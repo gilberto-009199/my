@@ -1,0 +1,14 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=pCloud
+Comment=Secure and simple to use cloud storage for you
+Icon=https://pcdn-www.pcloud.com/ZN0/images/favicons/apple-icon-57x57.png
+IconFile=https://pcdn-www.pcloud.com/ZN0/images/favicons/apple-icon-57x57.png
+URL=https://p-def7.pcloud.com/cBZQGMwxUZhuVWap7ZZZgEoT7kZ2ZZdjRZkZ5hhxVZcLZCFZbHZvRZVFZtFZwLZ1FZgRZTHZF4ZSLZRQZMRZ0AMJ0ZCFrsucpu0Gj82T9EbfWuOBibnpGk/pcloud
+#Type=Application
+#Exec=/usr/bin/google-chrome-stable %U
+#Path=
+#StartupNotify=true
+
+

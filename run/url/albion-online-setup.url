@@ -1,0 +1,13 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Albion online
+Comment=MMO RPG Online , aonde vc pode ser oque quiser!
+Icon=
+URL=https://live.albiononline.com/clients/20240315184921/albion-online-setup
+#Type=Application
+#Exec=/usr/bin/google-chrome-stable %U
+#Path=
+#StartupNotify=true
+
+

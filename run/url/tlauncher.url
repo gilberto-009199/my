@@ -1,0 +1,14 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=TLauncher
+Comment=TLauncher — Download Minecraft Launcher
+Icon=https://tlauncher.org/favicon-32x32.png
+IconFile=https://tlauncher.org/favicon-32x32.png
+URL=https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.899.zip
+#Type=Application
+#Exec=/usr/bin/google-chrome-stable %U
+#Path=
+#StartupNotify=true
+
+
