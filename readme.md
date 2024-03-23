@@ -11,7 +11,7 @@ sudo apt upgrade
 Instale as ferramentas de build basicas:
 
 ``
-sudo apt install make cmake wget apt-transport-https ca-certificates curl sed
+sudo apt install make cmake wget apt-transport-https ca-certificates curl sed git-lfs
 ``
 
  habilite a architetura de 32 bits 
