@@ -47,10 +47,15 @@ ln -s ~/my/config/user/.themes ~/.themes
 ``
 ln -s ~/my/config/user/.icons ~/.icons
 ``
++ Backgrounds de fundo
+``
+ln -s ~/my/config/user/.backgrounds ~/.backgrounds
+``
+
 + Vamos pegar as configurações de painel do xfce:
 (Cuidado, de pendendo da sua versoa talves seja melhor criar um backup!)
 ```
-tar -cvf ~/.config/xfce4.bkp.tar  ~/.config/xfce4xfce4.bkp.tar
+tar -cvf ~/.config/xfce4.bkp.tar  ~/.config/xfce4.bkp.tar
 rm -Rf ~/.config/xfce4 && ln -s ~/my/config/user/.config/xfce4 ~/.config/xfce4
 ```
 
