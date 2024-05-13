@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Discord
+Comment=
+Exec=/home/administrador/my/run/setup/Discord/Discord
+Icon=/home/administrador/my/run/setup/Discord/discord.png
+Path=
+Terminal=false
+StartupNotify=false
+X-XFCE-Source=file:///home/administrador/Desktop/Discord.desktop

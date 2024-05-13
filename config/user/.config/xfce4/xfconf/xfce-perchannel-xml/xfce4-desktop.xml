@@ -70,7 +70,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="1"/>
           <property name="image-style" type="int" value="3"/>
-          <property name="last-image" type="string" value="/home/administrador/my/config/user/.backgrounds/xpbg.jpg"/>
+          <property name="last-image" type="string" value="/home/administrador/my/config/user/.backgrounds/1fdef0b0fdfa833aa7a43fcaf495644c2cad1ada.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
           <property name="backdrop-cycle-timer" type="uint" value="1"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
@@ -98,7 +98,7 @@
     <property name="window-height" type="int" value="590"/>
   </property>
   <property name="desktop-icons" type="empty">
-    <property name="icon-size" type="uint" value="28"/>
+    <property name="icon-size" type="uint" value="24"/>
     <property name="tooltip-size" type="double" value="28"/>
     <property name="use-custom-font-size" type="bool" value="true"/>
     <property name="font-size" type="double" value="7"/>

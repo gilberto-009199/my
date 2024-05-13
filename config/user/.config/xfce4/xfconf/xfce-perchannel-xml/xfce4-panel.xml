@@ -13,6 +13,7 @@
       <property name="size" type="uint" value="28"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
+        <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
@@ -75,6 +76,27 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (62%)"/>
+        <value type="string" value="configuring wi-fi network connection “net_2g_ramos2”…"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos2” active: net_2g_ramos2 (69%)"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos2” active: net_2g_ramos2 (67%)"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos2” active: net_2g_ramos2 (62%)"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos2” active: net_2g_ramos2 (63%)"/>
+        <value type="string" value="configuring wi-fi network connection “net_2g_ramos3”…"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos2” active: net_2g_ramos2 (61%)"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos3” active: net_2g_ramos3 (50%)"/>
+        <value type="string" value="wi-fi network connection “net_2g_ramos3” active: net_2g_ramos3 (48%)"/>
+        <value type="string" value="no network connection"/>
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (54%)"/>
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (49%)"/>
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (63%)"/>
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (55%)"/>
+        <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (61%)"/>
+        <value type="string" value="wi-fi network connection “5.8g_ramos1” active: 5.8g_ramos1 (63%)"/>
+        <value type="string" value="wi-fi network connection “5.8g_ramos1” active: 5.8g_ramos1 (62%)"/>
+        <value type="string" value="wi-fi network connection “5.8g_ramos1” active: 5.8g_ramos1 (65%)"/>
+        <value type="string" value="wi-fi network connection “5.8g_ramos1” active: 5.8g_ramos1 (55%)"/>
+        <value type="string" value="configuring wi-fi network connection “2.4g_ramos1”…"/>
         <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (52%)"/>
         <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (57%)"/>
         <value type="string" value="wi-fi network connection “2.4g_ramos1” active: 2.4g_ramos1 (53%)"/>
@@ -82,6 +104,8 @@
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="steam"/>
         <value type="string" value="pcloud1"/>
       </property>
@@ -89,7 +113,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance2130"/>
+      <property name="mpris-players" type="string" value="chromium.instance13564;chromium.instance1819;chromium.instance1849;chromium.instance1865;chromium.instance1866;chromium.instance1877;chromium.instance1884;chromium.instance1907;chromium.instance1909;chromium.instance1940;chromium.instance1966;chromium.instance2004;chromium.instance2006;chromium.instance2029;chromium.instance2035;chromium.instance2040;chromium.instance2051;chromium.instance2056;chromium.instance2065;chromium.instance2073;chromium.instance2099;chromium.instance2101;chromium.instance2113;chromium.instance2120;chromium.instance2121;chromium.instance2146;chromium.instance2151;chromium.instance2153;chromium.instance2163;chromium.instance2166;chromium.instance2173;chromium.instance2203;chromium.instance2251;chromium.instance2387;chromium.instance2396;chromium.instance2408;chromium.instance2499;chromium.instance3461;chromium.instance37648;chromium.instance5854;chromium.instance7675;chromium.instance8811;chromium.instance9439;firefox.instance2130;firefox.instance34462;firefox.instance4952;vlc"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -103,6 +127,11 @@
       <property name="show-inactive" type="bool" value="false"/>
       <property name="show-grid" type="bool" value="true"/>
       <property name="timezone" type="string" value="Brazil/East"/>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17130698481.desktop"/>
+      </property>
     </property>
   </property>
 </channel>

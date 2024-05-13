@@ -5,6 +5,11 @@ doc/Videos/
 doc/Pictures/
 doc/Music/
 doc/Documents/
+doc/hts-cache/
+doc/hts-log.txt
+doc/cookies.txt
+doc/Web/archeagecodex.com/
+doc/archeagecodex.com/
 run/setup/
 run/bin/
 raw/
