@@ -1,0 +1,12 @@
+sudo systemctl stop NetworkManager
+
+sudo airmon-ng start wlp2s0
+sudo iwconfig wlp2s0mon
+# is mode monitor
+sudo airodump-ng wlp2s0mon
+sudo airodump-ng wlp2s0mon --band abg
+sudo aireplay-ng --test wlp2s0mon
+
+
+sudo airmon-ng stop wlp2s0mon
+sudo systemctl start NetworkManager
