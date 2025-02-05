@@ -15,7 +15,7 @@ alias workspace_python="git_python && bash | browser_estagio_python"
 
 # gil
 alias git_gil_ssh="eval \"$(ssh-agent -s)\" && ssh-add \"$HOME/.ssh/id_rsa\""
-alias git_gil="git config --global user.name \"gilberto-009199\" && git config --global user.email \"gilberto-009199\" && git_gil_ssh"
+alias git_gil="git config --global user.name \"gilberto-009199\" && git config --global user.email \"gilberto.tec@vivaldi.net\" && git_gil_ssh"
 alias workspace_gil="git_gil"
 
 
