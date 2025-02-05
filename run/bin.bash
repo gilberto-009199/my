@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Diretório onde estão os arquivos .url
+bin_directory="$HOME/my/run/bin"
 url_directory="$HOME/my/run/url"
 download_directory="$HOME/my/run/setup"
 scripts_directory="$HOME/my/run/scripts"

@@ -6,10 +6,6 @@ Comment=DBeaver Community is a free cross-platform database tool for developers.
 Icon=https://dbeaver.io/wp-content/uploads/2016/07/beaver_icon_32x32.png
 IconFile=https://dbeaver.io/wp-content/uploads/2016/07/beaver_icon_32x32.png
 URL=https://dbeaver.io/files/dbeaver-ce-latest-linux.gtk.x86_64-nojdk.tar.gz
-
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL_Output=dbeaver.tar.gz
+Exec=dbeaver.url.bash
 

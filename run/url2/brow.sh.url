@@ -1,0 +1,15 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Brow
+Comment=Browser in terminal
+Icon=https://www.brow.sh/assets/images/browsh-header.jpg
+IconFile=https://www.brow.sh/assets/images/browsh-header.jpg
+URL=https://github.com/browsh-org/browsh/releases/download/v1.8.0/browsh_1.8.0_linux_amd64
+
+#Type=Application
+#Exec=./browsh_1.8.0_linux_amd64
+#Path=
+#StartupNotify=true
+
+

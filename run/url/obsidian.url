@@ -1,14 +1,9 @@
 [InternetShortcut]
-Version=1.0
 Type=Link
-Name=Postman
-Comment=Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+Name=Obsidian
+Comment= is the private and flexible writing app that adapts to the way you think.
 Icon=https://obsidian.md/apple-touch-icon.png
 IconFile=https://obsidian.md/apple-touch-icon.png
-URL=https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.7/Obsidian-1.6.7.AppImage
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
-
+URL=https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/Obsidian-1.8.4.AppImage
+URL_Output=obsidian
+Exec=obsidian.url.bash

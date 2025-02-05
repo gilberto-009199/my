@@ -6,8 +6,6 @@ Comment=VisualVM is a visual tool integrating commandline JDK tools and lightwei
 Icon=https://visualvm.github.io/images/visualvm_logo_small.png
 IconFile=https://visualvm.github.io/images/visualvm_logo_small.png
 URL=https://github.com/oracle/visualvm/releases/download/2.1.8/visualvm_218.zip
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
+URL_Output=visualvm.zip
+Exec=visualvm.url.bash
 

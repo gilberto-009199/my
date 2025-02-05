@@ -1,42 +1,95 @@
 #!/bin/bash
 
 # Diretório onde estão os arquivos .url
+bin_directory="$HOME/my/run/bin"
 url_directory="$HOME/my/run/url"
 download_directory="$HOME/my/run/setup"
 
 # @todo criar um que hook post download para rodar um comando dentro dos .url
 
 # Verifica se o diretório existe
-if [ ! -d "$url_directory" ]; then
-    echo "Diretório não encontrado: $url_directory"
-    exit 1
-fi
+[[ ! -d "$url_directory" ]] && {
+    echo "Diretório não encontrado: $url_directory";
+    exit 1;
+}
 
 # Navega até o diretório com os arquivos .url
-cd "$url_directory" || exit
+cd "$url_directory" || {
+	echo "Aviso: erro ao entrar em  $url_directory"; 
+	exit 1;
+}
+
+res_auto_install="n"
+read -p "Deseja instalar todos os pacotes automaticamente? (s/n) > " res_auto_install;
+
 
 # Loop pelos arquivos .url no diretório
 for url_file in *.url; do
     # Verifica se o arquivo .url é válido
-    if [ -f "$url_file" ]; then
-        # Extrai o URL do arquivo .url e baixa o arquivo usando wget
-        url=$(grep -oP 'URL=\K[^ ]+' "$url_file")
-        name=$(grep -oP 'Name=\K[^.]+' "$url_file")
-        comment=$(grep -oP 'Comment=\K[^.]+' "$url_file")
-        if [ -n "$url" ]; then
-            echo "+ $name: $comment"
-            echo "Baixando $url ..."
-            # Executa wget e verifica se houve problemas
-            cd "$download_directory"
-            wget -P "$download_directory" "$url"
-            if [ $? -ne 0 ]; then
-                echo "Erro ao baixar $url"
-            fi
-        else
-            echo "Erro: Não foi possível encontrar o URL em $url_file"
-        fi
-	cd "$url_directory"
-    fi
+
+    [ -f "$url_file" ] || { 
+    	echo "Arquivo $url_file inválido";
+    	continue;
+    }
+    
+    # Extrai o URL do arquivo .url e baixa o arquivo usando wget
+    url=$(grep -oP 'URL=\K.*' "$url_file");
+    name=$(grep -oP 'Name=\K.*' "$url_file");
+    icon=$(grep -oP 'Icon=\K.*' "$url_file");
+    exec=$(grep -oP 'Exec=\K.*' "$url_file");
+    comment=$(grep -oP 'Comment=\K.*' "$url_file");
+	url_output=$(grep -oP 'URL_Output=\K.*' "$url_file");
+    
+
+    [ -n "$url" ] || { 
+    	echo "URL $url Invalida!";
+    	continue;
+   	}
+    echo "###########################";
+    echo "   + $name";
+	echo "     Exec: $exec";
+    echo "     Desc: $comment";
+    echo "     Url: $url";
+    
+    # Instalar automaticamente sem perguntar
+    res_install_package="s";
+    [[ "$res_auto_install" =~ ^[SsYy]$ ]] || {
+    	read -p "Deseja baixar e instalar '$name'? (s/n) }> " res_install_package;
+    }
+
+	[[ ! "$res_install_package" =~ ^[SsYy]$ ]] && continue;
+
+	echo "Baixando $url ...";
+	
+    # Executa wget e verifica se houve problemas
+    cd "$download_directory";
+    wget -q --show-progress "$url" -O "$download_directory/$url_output";
+    [ $? -ne 0 ]  && {
+	echo "$?";
+	echo "Erro ao baixar '$url'";
+    	continue;
+    }
+    
+    # Exec
+    [[ ! -n "$exec" ]] && {
+    	echo "Sem scripts '$exec'";
+    	continue;
+    }
+    
+	# Instalar automaticamente sem perguntar
+	res_exec="s"
+	[[ ! "$res_auto_install" =~ ^[SsYy]$ ]] && {
+		read -p "Deseja executar o '$exec' (s/n) }> " res_exec;
+	}
+
+	[[ "$res_exec" =~ ^[SsYy]$ ]] && {
+		echo "Executando: $exec";
+		source "$url_directory/$exec" || echo "Aviso: erro ao executar $exec";
+	}
+
+    echo "Setup de $name, concluido!";
+    echo "###########################";
+	cd "$url_directory";
 done
 
-echo "Download concluído."
+echo "Setup concluído."

@@ -5,10 +5,7 @@ Name=LibreWolf
 Comment=Defend yourself against tracking and surveillance. Circumvent censorship.
 Icon=https://librewolf.net/icon.svg
 IconFile=https://librewolf.net/icon.svg
-URL=https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/130.0-3/LibreWolf.x86_64.AppImage
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL=https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/134.0.2-1/LibreWolf.x86_64.AppImage
+URL_Output=librewolf
+Exec=librewolf.url.bash
 

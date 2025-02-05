@@ -5,10 +5,8 @@ Name=Tor-Browser
 Comment=Defend yourself against tracking and surveillance. Circumvent censorship.
 Icon=https://support.torproject.org/static/images/favicon.png
 IconFile=https://support.torproject.org/static/images/favicon.png
-URL=https://dist.torproject.org/torbrowser/13.0.13/tor-browser-linux-x86_64-13.0.13.tar.xz
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
+URL=https://dist.torproject.org/torbrowser/14.0.5/tor-browser-linux-x86_64-14.0.5.tar.xz
+URL_Output=tor-browser.tar.xz
+Exec=tor-browser.url.bash
 
 

@@ -6,9 +6,6 @@ Comment=DuckStation is a PS1 Emulator aiming for the best accuracy and game supp
 Icon=https://www.duckstation.org/assets/img/smol.png
 IconFile=https://www.duckstation.org/assets/img/smol.png
 URL=https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-x64.AppImage
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL_Output=duckstation
+Exec=duckstation.url.bash
 

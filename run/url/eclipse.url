@@ -5,10 +5,7 @@ Name=Eclipse IDE
 Comment=IDE for java developers
 Icon=https://eclipseide.org/favicon.ico
 IconFile=https://www.postman.com/_ar-assets/images/favicon-1-16.png
-URL=https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2024-03/R/eclipse-jee-2024-03-R-linux-gtk-x86_64.tar.gz
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL=https://ftp2.osuosl.org/pub/eclipse/technology/epp/downloads/release/2024-12/R/eclipse-jee-2024-12-R-linux-gtk-x86_64.tar.gz
+URL_Output=eclipse.tar.gz
+Exec=eclipse.url.bash
 
