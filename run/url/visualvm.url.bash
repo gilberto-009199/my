@@ -6,7 +6,7 @@ download_directory=${download_directory:-"$HOME/my/run/setup"};
 
 # rename 
 mkdir -p "$download_directory/visualvm";
-unzip -o "$download_directory/visualvm.zip" -d "$download_directory/visualvm";
+unzip -o "$download_directory/visualvm.zip" -d "$download_directory/visualvm" > /dev/null;
 echo "Arquivo descompactado em '$download_directory/visualvm/'";
 
 chmod +x "$download_directory/visualvm/visualvm_218/bin/visualvm";

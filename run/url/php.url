@@ -6,8 +6,5 @@ Comment=A popular general-purpose scripting language that is especially suited t
 Icon=https://www.php.net/favicon.ico
 IconFile=https://www.php.net/favicon.ico
 URL=https://www.php.net/distributions/php-8.3.4.tar.gz
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL_Output=php.tar.gz
+Exec=php.url.bash

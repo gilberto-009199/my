@@ -62,7 +62,7 @@ for url_file in *.url; do
 	echo "Baixando $url ...";
 	
     # Executa wget e verifica se houve problemas
-    cd "$download_directory";
+    #cd "$download_directory";
     wget -q --show-progress "$url" -O "$download_directory/$url_output";
     [ $? -ne 0 ]  && {
 	echo "$?";

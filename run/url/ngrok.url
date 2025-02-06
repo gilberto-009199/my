@@ -6,9 +6,7 @@ Comment=Ngrok combines your reverse proxy, firewall, API gateway, and global loa
 Icon=https://assets-global.website-files.com/63ed4bc7a4b189da942a6b8c/63ef8624e010d9861920be4e_ngrok-favicon.svg
 IconFile=https://assets-global.website-files.com/63ed4bc7a4b189da942a6b8c/63ef8624e010d9861920be4e_ngrok-favicon.svg
 URL=https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
+URL_Output=ngrok.tgz
+Exec=ngrok.url.bash
 
 

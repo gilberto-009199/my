@@ -1,0 +1,12 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Albion online
+Comment=MMO RPG Online , aonde vc pode ser oque quiser!
+Icon=https://assets.albiononline.com/assets/images/header/logo.svg?cb=2.159.1
+IconFile=https://assets.albiononline.com/assets/images/header/logo.svg?cb=2.159.1
+URL=https://live.albiononline.com/clients/20250205102034/albion-online-setup
+URL_Output=albion-online-setup
+Exec=albion-online.url.bash
+
+

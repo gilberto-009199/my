@@ -6,9 +6,6 @@ Comment=Postman is an API platform for building and using APIs. Postman simplifi
 Icon=https://www.postman.com/_ar-assets/images/favicon-1-16.png
 IconFile=https://www.postman.com/_ar-assets/images/favicon-1-16.png
 URL=https://dl.pstmn.io/download/latest/linux_64
-#Type=Application
-#Exec=/usr/bin/google-chrome-stable %U
-#Path=
-#StartupNotify=true
-
+URL_Output=postman.tar.gz
+Exec=postman.url.bash
 
