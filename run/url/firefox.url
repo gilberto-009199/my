@@ -1,0 +1,11 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Firefox
+Comment=Navegador firefox
+Icon=https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor.7ff44b5b4194.svg
+IconFile=https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor.7ff44b5b4194.svg
+URL=https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/linux-x86_64/pt-BR/firefox-135.0.tar.xz
+URL_Output=firefox.tar.xz
+Exec=firefox.url.bash
+

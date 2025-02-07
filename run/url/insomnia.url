@@ -1,0 +1,11 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=Insomnia
+Comment=Insomnia http client developer
+Icon=https://insomnia.rest/images/insomnia-logo.svg
+IconFile=https://insomnia.rest/images/insomnia-logo.svg
+URL=https://github.com/Kong/insomnia/releases/download/core%4010.3.1-beta.3/Insomnia.Core-10.3.1-beta.3-x86_64.AppImage
+URL_Output=insomnia
+Exec=insomnia.url.bash
+

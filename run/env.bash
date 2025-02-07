@@ -20,16 +20,7 @@ if [ ! -d "$bin_directory" ]; then
     echo "Diretório não encontrado: $bin_directory";
 fi
 
-# Load Scripts
-if [ -d "$scripts_directory" ]; then
-    for file in $scripts_directory/*.bash; do
-        chmod +x $file;
-        source "$file";
-    done
-fi
-
-# Load Path Binary
-export PATH="$PATH:$bin_directory/";
 
 
-
+# cargo_home/env
+source /home/administrador/my/run/setup/rust/cargo_home/env
