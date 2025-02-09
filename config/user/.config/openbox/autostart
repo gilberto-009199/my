@@ -16,8 +16,12 @@
 #
 xfce-mcs-manager &
 pulseaudio &
+# xrandr
+# restaure: xrandr --output eDP --auto --output HDMI-A-0 --auto
+xrandr --output eDP --off --output HDMI-A-0 --auto &
 #xcompmgr &
 #cairo-dock &
+feh --bg-fill ~/.backgrounds/wp3983743-ice-wallpapers.jpg &
 xfce4-terminal &
 tint2 &
 pcmanfm &

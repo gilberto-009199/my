@@ -1,5 +1,6 @@
 config/user/.config/xfce4/xfconf/xfce-perchannel-xml/*.*
 config/user/.icons/Windows/icon-theme.cache
+config/user/.fonts/.uuid
 doc/Downloads/
 doc/Downloads/*
 doc/Videos/

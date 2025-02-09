@@ -37,7 +37,7 @@ read -p "Deseja adicionar o env.bash ao .bashrc?(s/n) }> " setup_env;
 [[ "$setup_env" =~ ^[SsYy]$ ]] && {
     cat <<EOF >> "$HOME/.bashrc"
 # env for my dir
-source $work_dir/env.bash
+[[ -f "$work_dir/my/env.bash" ]] && source $work_dir/my/env.bash
 EOF
 }
 
@@ -46,7 +46,7 @@ read -p "Deseja adicionar o bin.bash ao .bashrc?(s/n) }> " setup_bin;
 [[ "$setup_bin" =~ ^[SsYy]$ ]] && {
     cat <<EOF >> "$HOME/.bashrc"
 # bin for my dir
-source $work_dir/bin.bash
+[[ -f "$work_dir/my/bin.bash" ]] && source $work_dir/my/bin.bash
 EOF
 }
 
