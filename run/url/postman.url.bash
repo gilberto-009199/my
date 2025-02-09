@@ -1,20 +1,29 @@
 #!/bin/bash
 
-bin_directory=${bin_directory:-"$HOME/my/run/bin"};
-url_directory=${url_directory:-"$HOME/my/run/url"};
-download_directory=${download_directory:-"$HOME/my/run/setup"};
+work_dir="$HOME"
+config_directory="$work_dir/my/config"
+dev_directory="$work_dir/my/dev"
+doc_directory="$work_dir/my/doc"
+raw_directory="$work_dir/my/raw"
+tmp_directory="$work_dir/my/tmp"
+run_directory="$work_dir/my/run"
+bin_run_directory="$run_directory/bin"
+setup_run_directory="$run_directory/setup"
+scripts_run_directory="$run_directory/scripts"
+url_run_directory="$run_directory/url"
+depends_url_run_directory="$run_directory/url/depends"
 
-mkdir -p "$download_directory/postman";
-tar -xf "$download_directory/postman.tar.gz" -C "$download_directory/postman";
-echo "Arquivo descompactado em '$download_directory/postman/'";
+mkdir -p "$setup_run_directory/postman";
+tar -xf "$setup_run_directory/postman.tar.gz" -C "$setup_run_directory/postman";
+echo "Arquivo descompactado em '$setup_run_directory/postman/'";
 
-chmod +x "$download_directory/postman/Postman/app/postman";
+chmod +x "$setup_run_directory/postman/Postman/app/postman";
 echo "Permissões atribuitas!";
 
 # link simbolico
 
-mkdir -p "$bin_directory";
-ln -sf "$download_directory/postman/Postman/app/postman" "$bin_directory/postman";
-chmod +x "$bin_directory/postman";
-echo "Link Simbolico gerado! '$bin_directory/postman'";
+mkdir -p "$bin_run_directory";
+ln -sf "$setup_run_directory/postman/Postman/app/postman" "$bin_run_directory/postman";
+chmod +x "$bin_run_directory/postman";
+echo "Link Simbolico gerado! '$bin_run_directory/postman'";
 

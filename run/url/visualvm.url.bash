@@ -1,20 +1,29 @@
 #!/bin/bash
 
-bin_directory=${bin_directory:-"$HOME/my/run/bin"};
-url_directory=${url_directory:-"$HOME/my/run/url"};
-download_directory=${download_directory:-"$HOME/my/run/setup"};
+work_dir="$HOME"
+config_directory="$work_dir/my/config"
+dev_directory="$work_dir/my/dev"
+doc_directory="$work_dir/my/doc"
+raw_directory="$work_dir/my/raw"
+tmp_directory="$work_dir/my/tmp"
+run_directory="$work_dir/my/run"
+bin_run_directory="$run_directory/bin"
+setup_run_directory="$run_directory/setup"
+scripts_run_directory="$run_directory/scripts"
+url_run_directory="$run_directory/url"
+depends_url_run_directory="$run_directory/url/depends"
 
 # rename 
-mkdir -p "$download_directory/visualvm";
-unzip -o "$download_directory/visualvm.zip" -d "$download_directory/visualvm" > /dev/null;
-echo "Arquivo descompactado em '$download_directory/visualvm/'";
+mkdir -p "$setup_run_directory/visualvm";
+unzip -o "$setup_run_directory/visualvm.zip" -d "$setup_run_directory/visualvm" > /dev/null;
+echo "Arquivo descompactado em '$setup_run_directory/visualvm/'";
 
-chmod +x "$download_directory/visualvm/visualvm_218/bin/visualvm";
+chmod +x "$setup_run_directory/visualvm/visualvm_218/bin/visualvm";
 echo "Permissões atribuitas!";
 
 # Link simbolico
 
-mkdir -p "$bin_directory";
-ln -sf "$download_directory/visualvm/visualvm_218/bin/visualvm" "$bin_directory/visualvm";
-chmod +x "$bin_directory/visualvm";
-echo "Link Simbolico gerado! '$bin_directory/visualvm'";
+mkdir -p "$bin_run_directory";
+ln -sf "$setup_run_directory/visualvm/visualvm_218/bin/visualvm" "$bin_run_directory/visualvm";
+chmod +x "$bin_run_directory/visualvm";
+echo "Link Simbolico gerado! '$bin_run_directory/visualvm'";

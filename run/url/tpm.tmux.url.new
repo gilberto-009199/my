@@ -1,0 +1,11 @@
+[InternetShortcut]
+Version=1.0
+Type=Link
+Name=tmux
+Comment=Workspace in terminal
+Icon=https://avatars.githubusercontent.com/u/12054114?s=48&v=4
+IconFile=https://avatars.githubusercontent.com/u/12054114?s=48&v=4
+URL=https://github.com/nelsonenzo/tmux-appimage/releases/download/3.3a/tmux.appimage
+URL_Output=tmux
+Exec=tmux.url.bash
+

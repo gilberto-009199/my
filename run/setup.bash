@@ -1,21 +1,29 @@
 #!/bin/bash
 
 # Diretório onde estão os arquivos .url
-bin_directory="$HOME/my/run/bin"
-url_directory="$HOME/my/run/url"
-download_directory="$HOME/my/run/setup"
+work_dir="$HOME"
+config_directory="$work_dir/my/config"
+dev_directory="$work_dir/my/dev"
+doc_directory="$work_dir/my/doc"
+raw_directory="$work_dir/my/raw"
+tmp_directory="$work_dir/my/tmp"
+run_directory="$work_dir/my/run"
+bin_run_directory="$run_directory/bin"
+url_run_directory="$run_directory/url"
+setup_run_directory="$run_directory/setup"
+scripts_run_directory="$run_directory/scripts"
 
 # @todo criar um que hook post download para rodar um comando dentro dos .url
 
 # Verifica se o diretório existe
-[[ ! -d "$url_directory" ]] && {
-    echo "Diretório não encontrado: $url_directory";
+[[ ! -d "$url_run_directory" ]] && {
+    echo "Diretório não encontrado: $url_run_directory";
     exit 1;
 }
 
 # Navega até o diretório com os arquivos .url
-cd "$url_directory" || {
-	echo "Aviso: erro ao entrar em  $url_directory"; 
+cd "$url_run_directory" || {
+	echo "Aviso: erro ao entrar em  $url_run_directory"; 
 	exit 1;
 }
 
@@ -63,7 +71,7 @@ for url_file in *.url; do
 	
     # Executa wget e verifica se houve problemas
     #cd "$download_directory";
-    wget -q --show-progress "$url" -O "$download_directory/$url_output";
+    wget -q --show-progress "$url" -O "$setup_run_directory/$url_output";
     [ $? -ne 0 ]  && {
 	echo "$?";
 	echo "Erro ao baixar '$url'";
@@ -84,12 +92,12 @@ for url_file in *.url; do
 
 	[[ "$res_exec" =~ ^[SsYy]$ ]] && {
 		echo "Executando: $exec";
-		source "$url_directory/$exec" || echo "Aviso: erro ao executar $exec";
+		source "$url_run_directory/$exec" || echo "Aviso: erro ao executar $exec";
 	}
 
     echo "Setup de $name, concluido!";
     echo "###########################";
-	cd "$url_directory";
+	cd "$url_run_directory";
 done
 
 echo "Setup concluído."
