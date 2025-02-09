@@ -32,5 +32,22 @@ read -p "Deseja executar o setup do /run?(s/n) }> " setup_run;
     source "$run_directory/setup.bash" || echo "Aviso: erro ao pegar $run_directory/setup.bash";
 }
 
+# Setup Env
+read -p "Deseja adicionar o env.bash ao .bashrc?(s/n) }> " setup_env;
+[[ "$setup_env" =~ ^[SsYy]$ ]] && {
+    cat <<EOF >> "$HOME/.bashrc"
+# env for my dir
+source $work_dir/env.bash
+EOF
+}
+
+# Setup Bin
+read -p "Deseja adicionar o bin.bash ao .bashrc?(s/n) }> " setup_bin;
+[[ "$setup_bin" =~ ^[SsYy]$ ]] && {
+    cat <<EOF >> "$HOME/.bashrc"
+# bin for my dir
+source $work_dir/bin.bash
+EOF
+}
 
 
