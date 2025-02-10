@@ -1,5 +1,8 @@
-# how install
+# Como usar
 
+./setup.bash
+
+<!--
  Primeiro atualize o repositorio:
 
 
@@ -155,7 +158,7 @@ sudo modprobe vhost_net
 echo vhost_net | sudo tee -a /etc/modules
 sudo apt -y install vim libguestfs-tools libosinfo-bin  qemu-system virt-manager
 ``
-
+-->
 
 
 
