@@ -39,11 +39,15 @@ echo "Link Simbolico gerado! '$bin_run_directory/asdf'";
 
 # Add Env
 if [[ -d "${ASDF_DATA_DIR:-$HOME/.asdf}/shims" ]]; then
+
    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH";
-   cat <<EOF >> "$run_directory/env.bash"
-    # Asdf Shims
-	export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+cat <<EOF >> "$run_directory/env.bash"
+# Asdf Shims
+if [ -f "${ASDF_DATA_DIR:-$HOME/.asdf}/shims" ]; then
+	export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:\$PATH"
+fi
 EOF
+
 fi
 
 

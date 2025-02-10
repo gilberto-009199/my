@@ -26,7 +26,20 @@ if [ ! -d "$scripts_run_directory" ]; then
     echo "Diretório não encontrado: $scripts_run_directory";
 fi
 
+
 # cargo_home/env
-source /home/administrador/my/run/setup/rust/cargo_home/env
-    # Asdf Shims
-	export PATH="/home/administrador/.asdf/shims:/home/administrador/.asdf/shims:/home/administrador/my/run/setup/rust/cargo_home/bin:/home/administrador/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/administrador/my/run/bin/:/home/administrador/my/run/bin/"
+if [ -f "/home/administrador/my/run/setup/rust/cargo_home/env" ]; then
+	source /home/administrador/my/run/setup/rust/cargo_home/env;
+fi
+
+# Asdf Shims
+if [ -d "/home/administrador/.asdf/shims" ]; then
+	export PATH="/home/administrador/.asdf/shims:$PATH";
+fi
+
+# Asdf JAVA PLUGINS
+if [ -f "/home/administrador/.asdf/plugins/java/set-java-home.bash" ]; then
+	. ~/.asdf/plugins/java/set-java-home.bash
+fi
+
+
