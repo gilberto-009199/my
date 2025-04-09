@@ -38,14 +38,14 @@ fi
 
 # Config:
 if [[ -d "$config_directory/user/.config" ]]; then
-	if [[ -d "$config_directory/user/.config/openbox" ]]; then
-        ln -sfn "$config_directory/user/.config/openbox" "$HOME/.config/openbox";
-	fi
-	if [[ -d "$config_directory/user/.config/tint2" ]]; then
-        ln -sfn "$config_directory/user/.config/tint2" "$HOME/.config/tint2";        
+    if [[ -d "$config_directory/user/.config/openbox" ]]; then
+       ln -sfn "$config_directory/user/.config/openbox" "$HOME/.config/openbox";
+    fi
+    if [[ -d "$config_directory/user/.config/tint2" ]]; then
+       ln -sfn "$config_directory/user/.config/tint2" "$HOME/.config/tint2";
     fi
     if [[ -d "$config_directory/user/.config/xfce4" ]]; then
-        ln -sfn "$config_directory/user/.config/xfce4" "$HOME/.config/xfce4";
+       ln -sfn "$config_directory/user/.config/xfce4" "$HOME/.config/xfce4";
     fi
 fi
 
