@@ -1,6 +1,15 @@
-# Como usar
 
-./setup.bash
+# How Install
+
+```shell
+$ ./setup.bash
+```
+
+<!--  Add Backup sys  -->
+<!--  Add Rsync sys use git -->
+<!--  Add package openbox sandbox via Xephyr and x11  -->
+<!--  Add package manager gui packages  -->
+<!--  Add Desktop launcher for bin  use url[icon] and url[comment]  -->
 
 <!--
  Primeiro atualize o repositorio:
