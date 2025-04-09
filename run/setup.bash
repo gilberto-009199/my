@@ -13,8 +13,6 @@ url_run_directory="$run_directory/url"
 setup_run_directory="$run_directory/setup"
 scripts_run_directory="$run_directory/scripts"
 
-# @todo criar um que hook post download para rodar um comando dentro dos .url
-
 # Verifica se o diretório existe
 [[ ! -d "$url_run_directory" ]] && {
     echo "Diretório não encontrado: $url_run_directory";
