@@ -7,6 +7,7 @@ $ ./setup.bash
 
 <!--  Add Backup sys  -->
 <!--  Add Rsync sys use git -->
+<!--  Add package multiprofile multi personal -->
 <!--  Add package openbox sandbox via Xephyr and x11  -->
 <!--  Add package manager gui packages  -->
 <!--  Add Desktop launcher for bin  use url[icon] and url[comment]  -->
